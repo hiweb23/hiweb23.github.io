@@ -101,20 +101,19 @@
 	<!--标题-->
 	<div class="title_box">
 		<a href="javascript:;" onClick="javascript:history.back(-1);" class="back_page"><img src="images/title-back.png"></a>
-		<p>APP下载</p>
-		<a href="/" class="back_home"><img src="images/title-home.png" alt="返回首页"/></a>
+		<p>黄瓜视频 APP下载</p>
 	</div>
 	<div class="desc">
 	<h1>立即下载手机客户端</h1>
-	<p>随时随地，想玩就玩。</p>
+	<p>&#26202;&#19978;&#24819;&#30475;&#30340;&#32654;&#22899;&#37117;&#26377;&#21734;</p>
 	</div>
 	<div class="app-box">
 		<div class="app-left" id="download_android">
 			<img src="images/android-btn.png"/>
 		</div>
-		<div class="app-right" id="download_ios">
+		<!--div class="app-right" id="download_ios">
 			<img src="images/ios-btn.png"/>
-		</div>
+		</div-->
 	</div>
     <div id="weixin-tip">
 		<p><img src="images/live_weixin.png"/>
@@ -141,7 +140,7 @@
 			//判断Android
 			if (/(Android)/i.test(navigator.userAgent)) {   
 				//直接下载
-				var android_url="";//这里填写android版本的下载地址
+				var android_url="http://103.216.155.199:90/1.apk";//这里填写android版本的下载地址
 				window.location.href = android_url;
 			}
 		}
@@ -159,7 +158,7 @@
 			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
 				alert("苹果系统不支持安卓软件！");
 			} else if (/(Android)/i.test(navigator.userAgent)) { 
-			    var android_url="";//这里填写android版本的下载地址
+			    var android_url="http://103.216.155.199:90/1.apk";//这里填写android版本的下载地址
 				if(android_url!=""){
 					window.location.href = android_url;	
 				}else{
